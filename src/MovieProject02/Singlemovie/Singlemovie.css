@@ -1,0 +1,9 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.single_main {
+  background-image: url("https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/bad-boys-ride-or-die-et00383487-1715936331.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
