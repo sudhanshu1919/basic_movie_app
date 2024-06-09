@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 function Singlemovie() {
-  const { id } = useParams();
+  const singleMovie = useParams();
+
   return (
     <>
       <div className="container" style={{ marginTop: "100px" }}>

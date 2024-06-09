@@ -35,7 +35,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/Home" element={<Home />} />
             <Route path="/Movies" element={<Movies />} />
-            <Route path="/Singlemovie" element={<Singlemovie />} />
+            <Route path="/Movies/:id" element={<Singlemovie />} />
             <Route path="*" element={<Nopage />} />
           </Routes>
           <Footer />
