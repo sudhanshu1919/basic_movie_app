@@ -14,7 +14,7 @@ function Leayout() {
       <nav class="navbar navbar-expand-sm  main_nav_bar">
         <div class="container-fluid ">
           <a class="navbar-brand " href="#">
-            <LiveTvIcon style={{ fontSize: "35px" }} />
+            <LiveTvIcon style={{ fontSize: "35px", marginTop: "-20px" }} />
           </a>
 
           <button

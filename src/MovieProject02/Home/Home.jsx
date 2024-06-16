@@ -17,7 +17,7 @@ function Home() {
       contactform: true,
       whatsapp: "+918788365413",
       call_to_action: "Have any problem just message us",
-      button_color: "#8a2be2",
+      button_color: "#f32b4c",
       position: "right",
       order: "contactform,whatsapp",
       pre_filled_message: "",
@@ -41,10 +41,10 @@ function Home() {
       {/*  Heare we have All data prient on home screen */}
 
       <div className="container main_home_con">
-        {data.map((value) => {
+        {data.map((value, index) => {
           return (
             <>
-              <div className="HomeCart mt-3 mx-2">
+              <div className="HomeCart mt-3 mx-2" key={index}>
                 <div class="card main_cart_home" style={{ width: "200px" }}>
                   <img
                     class="card-img-top"
@@ -61,6 +61,17 @@ function Home() {
                       className="text-justify"
                     >
                       <b>{value.Language}</b>
+                      <b
+                        className="mx-2"
+                        style={{
+                          background: "rgb(243, 43, 76)",
+                          padding: "2px 5px 2px",
+                          color: "white",
+                          borderRadius: "2px",
+                        }}
+                      >
+                        {value.type}
+                      </b>
                     </p>
                   </div>
                 </div>

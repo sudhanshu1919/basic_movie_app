@@ -9,33 +9,33 @@ body {
 }
 
 .main_nav_bar {
-  background-color: black;
-
+  background-color: #ffffff;
   height: 80px;
   width: 100%;
   position: fixed !important;
   top: 0;
   z-index: 1000;
-  box-shadow: 0px 10px 19px -3px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px 0px !important;
   transition: 0.5s;
   cursor: pointer;
 }
 
 a {
   text-decoration: none !important;
-  color: rgb(255, 255, 255) !important;
+  color: #f32b4c !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serifs;
   font-weight: bold;
   margin-left: 10px;
   margin-right: 20px;
   transition: 0.5s;
+  margin-top: 10px;
 }
 
 .search_bar {
-  width: 160px !important;
+  width: 170px !important;
   transition: 0.5s !important;
-  border-radius: 5px !important;
-  color: rgb(255, 255, 255);
+  border-radius: 0px !important;
+  color: #f32b4c;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,6 +45,9 @@ a {
 
 input {
   margin-left: 60px !important;
+  border-color: #f32b4c !important;
+  border-radius: none !important;
+  color: #f32b4c !important;
 }
 
 @media (min-width: 350px) {

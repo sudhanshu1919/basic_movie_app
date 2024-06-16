@@ -29,57 +29,19 @@ function Movies() {
       <div
         className="container"
         style={{
-          border: "1px solid rgb(220, 220, 220)",
+          border: "1px solid rgb(237, 174, 185)",
           textAlign: "center",
           marginTop: "150px",
           marginBottom: "150px",
+          borderRadius: "5px",
         }}
       >
         <div className=" main_movie_con">
           <div className="Buttons">
             <div>
-              <Dropdown>
-                <Dropdown.Toggle
-                  style={{ boxShadow: "0px 10px 19px -3px rgba(0, 0, 0, 0.1)" }}
-                  className="btn  btn-sm mx-2"
-                  variant="secondary"
-                  id="dropdown-basic"
-                >
-                  Seclect
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu style={{ marginTop: "10px" }}>
-                  <Dropdown.Item
-                    href="#"
-                    onClick={() => {
-                      setCategory("comedy");
-                    }}
-                  >
-                    comedy
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    href="#"
-                    onClick={() => {
-                      setCategory("Horror");
-                    }}
-                  >
-                    Horror
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    href="#"
-                    onClick={() => {
-                      setCategory("Action");
-                    }}
-                  >
-                    Action
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-            <div>
               <button
                 style={{ boxShadow: "0px 10px 19px -3px rgba(0, 0, 0, 0.1)" }}
-                className="btn bg-info btn-sm mx-2"
+                className="mx-2"
                 onClick={() => {
                   All();
                 }}
@@ -90,7 +52,7 @@ function Movies() {
             <div>
               <button
                 style={{ boxShadow: "0px 10px 19px -3px rgba(0, 0, 0, 0.1)" }}
-                className="btn bg-info btn-sm mx-2"
+                className="btn-sm mx-2"
                 onClick={() => {
                   setLanguage("Webseries");
                 }}
@@ -166,6 +128,7 @@ function Movies() {
             </div>
           </div>
         </div>
+        <hr />
 
         <div className="row mt-3">
           <div className="row mt-2 sm ">

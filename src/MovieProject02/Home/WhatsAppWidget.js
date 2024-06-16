@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const WhatsAppWidget = () => {
   useEffect(() => {
@@ -10,16 +10,16 @@ const WhatsAppWidget = () => {
       const message = "Hello, I have a question.";
       const encodedMessage = encodeURIComponent(message);
       const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
-      window.open(whatsappURL, '_blank');
+      window.open(whatsappURL, "_blank");
     };
 
     // Add event listener to handle WhatsApp button click
-    const whatsappButton = document.getElementById('whatsappButton');
-    whatsappButton.addEventListener('click', handleWhatsAppClick);
+    const whatsappButton = document.getElementById("whatsappButton");
+    whatsappButton.addEventListener("click", handleWhatsAppClick);
 
     return () => {
       // Clean up the event listener when the component is unmounted
-      whatsappButton.removeEventListener('click', handleWhatsAppClick);
+      whatsappButton.removeEventListener("click", handleWhatsAppClick);
     };
   }, []);
 

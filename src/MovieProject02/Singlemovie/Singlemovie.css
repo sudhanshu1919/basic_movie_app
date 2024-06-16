@@ -3,7 +3,59 @@ body {
 }
 
 .single_main {
-  background-image: url("https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/bad-boys-ride-or-die-et00383487-1715936331.jpg");
-  background-repeat: no-repeat;
+  /* background-image: url("https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/bad-boys-ride-or-die-et00383487-1715936331.jpg"); */
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 530px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 8px 0px;
+}
+
+.bg_color {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 500px;
+}
+.main_cart {
+  display: flex;
+  align-items: center;
+}
+
+.movie_info h5 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.languages {
+  padding: 5px 15px 5px;
+  background-color: rgb(221, 221, 221);
+  margin: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.info p {
+  color: white;
+}
+
+.Movie_btn {
+  color: white;
+  padding: 10px 30px 10px;
+  border: none;
+  background-color: rgb(243, 43, 76);
+}
+
+.Movie_btn:hover {
+  color: rgb(243, 43, 76);
+  padding: 10px 30px 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.about_movie h5 {
+  font-weight: 600;
+  font-size: 25px;
 }

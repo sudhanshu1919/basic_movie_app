@@ -7,8 +7,6 @@ import Leayout from "./Leayout/Leayout";
 import Footer from "./Footer/Footer";
 import Nopage from "./Nopage/Nopage";
 import Data from "./Data.json";
-import { useEffect } from "react";
-
 export const UserContext = createContext();
 
 function App() {
