@@ -11,20 +11,11 @@
   },
   {
     "id": "2",
-<<<<<<< HEAD
     "image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/munjya-et00398936-1716358299.jpg",
     "Name": "Munjya",
     "type": "3D",
     "Language": "Hindi",
-    "About": "A young man`s visit to his native village unveils a family secret and a vengeful spirit, Munjya, who wants to get married. Now the young man must fight to protect himself and his love from Munjya`s clutches leading to a humorously chaotic and terrifying adventure.",
-    "time": "2h 3m • Comedy, Horror • UA • 7 Jun, 2024"
-=======
-    "image": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-NjIuM0sgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00363650-ycbpksuxsh-portrait.jpg",
-    "Name": "Chandu Champion",
-    "Language": "Hindi",
-    "About": "This is an unbelievable tale of a man who faced one adversary after another with an undying spirit.",
-    "bg_image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/chandu-champion-et00363650-1715754023.jpg"
->>>>>>> 4549327b2b8c7205ca7ed29a9f5b8fec28955b32
+    "About": "This is an unbelievable tale of a man who faced one adversary after another with an undying spirit."
   },
   {
     "id": "3",
