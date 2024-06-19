@@ -1,33 +1,62 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import "./Singlemovie.css";
+import { UserContext } from "../App";
 
 function Singlemovie() {
-  const singleMovie = useParams();
-  let currentProduct = Number(singleMovie.id) - 1;
-  console.log("current product...." + currentProduct);
+  const { data } = useContext(UserContext);
+  const { id } = useParams();
+
+  if (!data || !Array.isArray(data) || data.length === 0) {
+    return <div>Movie data not available</div>;
+  }
+
+  const currentProduct = Number(id) - 1;
+
+  if (currentProduct < 0 || currentProduct >= data.length) {
+    return <div>Movie not found</div>;
+  }
+
+  const movie = data[currentProduct];
+
+  if (!movie) {
+    return <div>Movie data is not available</div>;
+  }
 
   return (
     <>
       <div className="container-fluid" style={{ marginTop: "90px" }}>
         <div className="single_main">
+          <video className="bg_video" autoPlay muted loop>
+            <source
+              src="https://videos.pexels.com/video-files/7988642/7988642-uhd_2732_1440_25fps.mp4"
+              autoPlay
+              muted
+              loop
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
           <div className="bg_color">
             <div className="main_cart">
-              <div class="card" style={{ width: "15rem" }}>
+              <div className="card" style={{ width: "15rem" }}>
                 <img
-                  src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bad-boys-ride-or-die-et00383487-1715936331.jpg"
-                  class="card-img-top"
-                  alt="..."
+                  src={movie.image}
+                  className="card-img-top"
+                  alt={movie.Name}
                 />
               </div>
 
               <div className="movie_info mx-4">
-                <h5>Bad Boys: Ride or Die</h5>
+                <h5>{movie.Name}</h5>
                 <div className="d-flex">
-                  <div className="languages">English</div>
+                  <div className="languages">{movie.Language}</div>
                 </div>
                 <div className="info">
-                  <p>2h 23m • Biography , Drama , Sports • UA • 14 Jun, 2024</p>
+                  <p>
+                    {movie.time} | {movie.type}
+                  </p>
+
                   <button className="Movie_btn">Book Tickets</button>
                 </div>
               </div>
@@ -39,12 +68,7 @@ function Singlemovie() {
       <div className="container mt-3">
         <div className="about_movie">
           <h5>About the movie</h5>
-          <p>
-            This is an unbelievable tale of a man who faced one adversary after
-            another with an undying spirit. His unwavering zeal and
-            never-give-up attitude led to the creation of history. This is the
-            story of Chandu Champion!
-          </p>
+          <p>{movie.About}</p>
         </div>
       </div>
     </>

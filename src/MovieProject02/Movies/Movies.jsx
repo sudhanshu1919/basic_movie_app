@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { UserContext } from "../App";
 import { useContext } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
+import { useNavigate } from "react-router";
 import "./Movies.css";
-function Movies() {
+function Movies({ value }) {
+  const navigte = useNavigate();
+
   const { data } = useContext(UserContext);
 
   const [newdata, setData] = useState(data);
 
   const setLanguage = (val) => {
     let FilterDta = data.filter((value) => value.Language === val);
-
     setData(FilterDta);
   };
 
@@ -138,6 +139,7 @@ function Movies() {
                   <>
                     <div
                       class="card mb-5 AllMovies main_movie_Cart"
+                      value={value}
                       key={index}
                       style={{ width: "200px", margin: "10px" }}
                     >
@@ -146,6 +148,9 @@ function Movies() {
                         style={{ padding: "5px" }}
                         src={value.image}
                         alt="Card image cap"
+                        onClick={() => {
+                          navigte(`Movies/${value.id}`);
+                        }}
                       ></img>
                       <div class="card-body">
                         <h5 class="card-title">

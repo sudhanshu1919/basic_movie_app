@@ -6,8 +6,9 @@ import "./Home.css";
 
 import WhatsAppWidget from "./WhatsAppWidget";
 import { useState } from "react";
-
-function Home() {
+import { useNavigate } from "react-router";
+function Home({ value }) {
+  const navigte = useNavigate();
   //we have tack data from home component handleSearchChange fat awrrow function
 
   const { data } = useContext(UserContext);
@@ -51,6 +52,9 @@ function Home() {
                     style={{ padding: "5px" }}
                     src={value.image}
                     alt="Card image cap"
+                    onClick={() => {
+                      navigte(`Movies/${value.id}`);
+                    }}
                   ></img>
                   <div class="card-body">
                     <h5 class="card-title">
